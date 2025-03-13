@@ -20798,7 +20798,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .footer-wrapper-right {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 @media only screen and (max-width: 767px) {
   .footer-wrapper-right {
@@ -20908,7 +20908,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .copyright-area-one .copyright-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 1rem;
 }
 @media only screen and (max-width: 991px) {
   .copyright-area-one .copyright-wrapper {
