@@ -6,12 +6,9 @@
         <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
         <title>Hydro Therm Engineers</title>
         
-<<<<<<< HEAD
         <!-- Head Section CSS -->
-        <?php include 'temp/head.php'; ?>
-=======
-        <!-- fontawesome css -->
-        <link rel="stylesheet" preload href="assets/css/plugins/fontawesome.css" />
+                <!-- fontawesome css -->
+                <link rel="stylesheet" preload href="assets/css/plugins/fontawesome.css" />
         <link rel="stylesheet" preload href="assets/css/plugins/aos.css" />
         <!-- swiper css-->
         <link rel="stylesheet" preload href="assets/css/plugins/odometer.css" />
@@ -23,14 +20,10 @@
         <link rel="stylesheet" preload href="assets/css/vendor/bootstrap.min.css" />
         <!-- custom css here -->
         <link rel="stylesheet" preload href="assets/css/style.css" />
->>>>>>> 390ed05 (developer commit)
     </head>
 
     <body>
         <!-- header area start -->
-<<<<<<< HEAD
-        <?php include 'temp/header.php'; ?>
-=======
         <header class="heder-one">
             <div class="header-two-container">
                 <div class="row">
@@ -1286,7 +1279,6 @@
             </div>
             <!-- mobile menu area end -->
         </div>
->>>>>>> 390ed05 (developer commit)
         <!-- header area end -->
 
         <!-- banner swiper wrapper area srart -->
@@ -1753,9 +1745,6 @@
         <!-- rts testimonials area end -->
 
         <!-- Footer Starts -->
-<<<<<<< HEAD
-        <?php include "temp/footer.php"; ?>
-=======
                 <!-- rts footer area start -->
                 <div class="rts-footer-area rts-section-gapTop bg_footer-1 bg_image">
             <div class="container">
@@ -2008,7 +1997,6 @@
             // Listen for scroll events
             window.addEventListener("scroll", updateMarqueeOnScroll);
         </script>
->>>>>>> 390ed05 (developer commit)
         <!-- Footer Ends -->
     </body>
 
