@@ -1,0 +1,5 @@
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/png" href="assets/icons/favicon.png" />
+
+<!-- Core Css -->
+<link rel="stylesheet" href="assets/css/styles.css" />

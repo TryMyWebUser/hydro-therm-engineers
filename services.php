@@ -34,13 +34,13 @@ include("header.php");
                             <!-- single blog two -->
                             <div class="product-single-two-wrapper shop">
                                 <div class="image-area">
-                                    <a href="single-product.html" class="thumbnail">
-                                        <img src="assets/images/shop/shop-01.jpg" alt="blog-image">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/a.png" alt="image">
                                     </a>
                                 </div>
                                 <div class="inner">
-                                    <a href="single-product.html">
-                                        <h5 class="title my-0"> Modernize Shovel</h5>
+                                    <a href="">
+                                        <h5 class="title my-0">Water auditing</h5>
                                     </a>
                                 </div>
                             </div>
@@ -50,13 +50,13 @@ include("header.php");
                             <!-- single blog two -->
                             <div class="product-single-two-wrapper shop">
                                 <div class="image-area">
-                                    <a href="single-product.html" class="thumbnail">
-                                        <img src="assets/images/shop/shop-02.jpg" alt="blog-image">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/b.png" alt="image">
                                     </a>
                                 </div>
                                 <div class="inner">
-                                    <a href="single-product.html">
-                                        <h5 class="title my-0">Framming Hammer & Axe</h5>
+                                    <a href="#">
+                                        <h5 class="title my-0">Revamping & upgrade the  old or unused Water and waste water treatment plant</h5>
                                     </a>
                                 </div>
                             </div>
@@ -66,13 +66,13 @@ include("header.php");
                             <!-- single blog two -->
                             <div class="product-single-two-wrapper shop">
                                 <div class="image-area">
-                                    <a href="single-product.html" class="thumbnail">
-                                        <img src="assets/images/shop/shop-03.jpg" alt="blog-image">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/c.png" alt="image">
                                     </a>
                                 </div>
                                 <div class="inner">
-                                    <a href="single-product.html">
-                                        <h5 class="title my-0"> Safety Helmet</h5>
+                                    <a href="#">
+                                        <h5 class="title my-0">Plant Automation </h5>
                                     </a>
                                 </div>
                             </div>
@@ -82,13 +82,45 @@ include("header.php");
                             <!-- single blog two -->
                             <div class="product-single-two-wrapper shop">
                                 <div class="image-area">
-                                    <a href="single-product.html" class="thumbnail">
-                                        <img src="assets/images/shop/shop-04.jpg" alt="blog-image">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/d.png" alt="image">
                                     </a>
                                 </div>
                                 <div class="inner">
-                                    <a href="single-product.html">
-                                        <h5 class="title my-0">Core Cutter Machine</h5>
+                                    <a href="#">
+                                        <h5 class="title my-0">Annual Maintenance Contract</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- single blog two end -->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <!-- single blog two -->
+                            <div class="product-single-two-wrapper shop">
+                                <div class="image-area">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/e.png" alt="image">
+                                    </a>
+                                </div>
+                                <div class="inner">
+                                    <a href="#">
+                                        <h5 class="title my-0">Operation & Maintenance</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- single blog two end -->
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <!-- single blog two -->
+                            <div class="product-single-two-wrapper shop">
+                                <div class="image-area">
+                                    <a href="#" class="thumbnail">
+                                        <img src="assets/images/f.png" alt="image">
+                                    </a>
+                                </div>
+                                <div class="inner">
+                                    <a href="#">
+                                        <h5 class="title my-0">Build Own Operate</h5>
                                     </a>
                                 </div>
                             </div>

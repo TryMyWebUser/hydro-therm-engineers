@@ -54,6 +54,17 @@
                 font-size: 22px;
             }
         }
+
+        @media (max-width: 1199px) {
+            #menu-btn {
+                display: flex !important;
+            }
+        }
+        @media (min-width: 1200px) {
+            #menu-btn {
+                display: none !important;
+            }
+        }
     </style>
     <body>
         <!-- header two area start -->

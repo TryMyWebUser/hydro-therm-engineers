@@ -1,4 +1,4 @@
- <!-- Footer Starts -->
+        <!-- Footer Starts -->
         <!-- rts footer area start -->
         <div class="rts-footer-area rts-section-gapTop bg_footer-1 bg_image">
             <div class="container">
