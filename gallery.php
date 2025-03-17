@@ -1,4 +1,5 @@
 <?php
+include "libs/load.php";
 include("header.php");
 ?> 
 
@@ -34,123 +35,20 @@ include("header.php");
                             aria-labelledby="home-tab" tabindex="0">
 
                             <div class="row g-24">
+                                <?php
+                                $conn = Database::getConnect();
+                                    $gallery = Operations::getGallery($conn);
+                                    if (!empty($gallery)) {
+                                        foreach ($gallery as $img) {
+                                ?>
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="single-project-card-inner">
                                         <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/20.webp" alt="portfolio">
+                                            <img src="assets/<?= $img['img']; ?>" alt="Gallery Image Not Found">
                                         </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/21.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/22.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/23.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/24.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/25.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/26.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/27.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="single-project-card-inner">
-                                        <a href="#0" class="thumbnail">
-                                            <img src="assets/images/portfolio/28.webp" alt="portfolio">
-                                        </a>
-                                        <!-- <div class="inner">
-                                            <a href="project-details.html">
-                                                <h5 class="title">Vehicle Manufacturing</h5>
-                                            </a>
-                                            <span>Building, Renovation</span>
-                                        </div> -->
-                                    </div>
-                                </div>
+                                <?php } } else { echo "<p>Gallery Image Not Found!</p>"; } ?>
                             </div>
                         </div>
                     </div>

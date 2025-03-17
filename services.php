@@ -1,4 +1,5 @@
 <?php
+include "libs/load.php";
 include("header.php");
 ?> 
 
@@ -30,102 +31,29 @@ include("header.php");
                 <div class="col-12 pr--25">
 
                     <div class="row g-24">
+                        <?php
+                            $category = Operations::getCategory();
+                            if (!empty($category)) {
+                                foreach ($category as $cate) {
+                                    if ($cate['page'] === 'ser') {
+                        ?>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <!-- single blog two -->
                             <div class="product-single-two-wrapper shop">
                                 <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/a.png" alt="image">
+                                    <a href="<?= ($cate['category'] === 'service' || $cate['category'] === 'services') ? 'services.php' : 'single-product.php?data=' . $cate['category'] ?>">
+                                        <img src="assets/<?= $cate['img'] ?>" alt="product image">
                                     </a>
                                 </div>
                                 <div class="inner">
-                                    <a href="">
-                                        <h5 class="title my-0">Water auditing</h5>
+                                    <a href="<?= ($cate['category'] === 'service' || $cate['category'] === 'services') ? 'services.php' : 'single-product.php?data=' . $cate['category'] ?>">
+                                        <h5 class="title my-0"><?= $cate['category'] ?></h5>
                                     </a>
                                 </div>
                             </div>
                             <!-- single blog two end -->
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <!-- single blog two -->
-                            <div class="product-single-two-wrapper shop">
-                                <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/b.png" alt="image">
-                                    </a>
-                                </div>
-                                <div class="inner">
-                                    <a href="#">
-                                        <h5 class="title my-0">Revamping & upgrade the  old or unused Water and waste water treatment plant</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- single blog two end -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <!-- single blog two -->
-                            <div class="product-single-two-wrapper shop">
-                                <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/c.png" alt="image">
-                                    </a>
-                                </div>
-                                <div class="inner">
-                                    <a href="#">
-                                        <h5 class="title my-0">Plant Automation </h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- single blog two end -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <!-- single blog two -->
-                            <div class="product-single-two-wrapper shop">
-                                <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/d.png" alt="image">
-                                    </a>
-                                </div>
-                                <div class="inner">
-                                    <a href="#">
-                                        <h5 class="title my-0">Annual Maintenance Contract</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- single blog two end -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <!-- single blog two -->
-                            <div class="product-single-two-wrapper shop">
-                                <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/e.png" alt="image">
-                                    </a>
-                                </div>
-                                <div class="inner">
-                                    <a href="#">
-                                        <h5 class="title my-0">Operation & Maintenance</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- single blog two end -->
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <!-- single blog two -->
-                            <div class="product-single-two-wrapper shop">
-                                <div class="image-area">
-                                    <a href="#" class="thumbnail">
-                                        <img src="assets/images/f.png" alt="image">
-                                    </a>
-                                </div>
-                                <div class="inner">
-                                    <a href="#">
-                                        <h5 class="title my-0">Build Own Operate</h5>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- single blog two end -->
-                        </div>
+                        <?php } } } else { echo "<p>Service Not Found</p>"; } ?>
                     </div>
                 </div>
             </div>
